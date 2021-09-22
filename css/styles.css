@@ -1,0 +1,42 @@
+/* google font 추가 !!많이 추가하면 불러오는데 느려지므로 참고!! */
+/* @import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+
+body {
+  /* font-family: "MuseoModerno", cursive; */
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* 시간 상태바 hack사용하여 가운데 정렬 */
+.status-bar {
+  display: flex;
+  justify-content: center;
+}
+
+/* 모든 상태바 33%의 폭 설정 */
+.status-bar__column {
+  width: 33%;
+}
+
+/* No Service와 WiFi icon 간격 설정 */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+/* 시간 상태바 hack사용하여 가운데 정렬 */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+/* 배터리, 충전중 상태바 오른쪽 정렬  */
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 110%,배터리,충전중 좌,우 간격 띄우기*/
+.status-bar__column .fa-battery-full {
+  margin: 0px 6px;
+}
