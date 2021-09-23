@@ -1,42 +1,67 @@
 /* google font 추가 !!많이 추가하면 불러오는데 느려지므로 참고!! */
 /* @import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+
 
 body {
-  /* font-family: "MuseoModerno", cursive; */
-  font-family: "Source Sans Pro", sans-serif;
+  /* 폰트적용 */
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* 시간 상태바 hack사용하여 가운데 정렬 */
-.status-bar {
+/* header클래스 위에 145px만큼 띄움 */
+.welcome-header {
+  margin: 90px 0px; /* 위아래는 90만큼 띄우고 좌우는 0*/
+  text-align: center;
   display: flex;
-  justify-content: center;
-}
-
-/* 모든 상태바 33%의 폭 설정 */
-.status-bar__column {
-  width: 33%;
-}
-
-/* No Service와 WiFi icon 간격 설정 */
-.status-bar__column:first-child span {
-  margin-right: 5px;
-}
-
-/* 시간 상태바 hack사용하여 가운데 정렬 */
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-
-/* 배터리, 충전중 상태바 오른쪽 정렬  */
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
+  
 }
 
-/* 110%,배터리,충전중 좌,우 간격 띄우기*/
-.status-bar__column .fa-battery-full {
-  margin: 0px 6px;
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* 텍스트 폭을 50%로 제한되게 설정 */
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7; /* 흐리게하여 회색처럼 보이게 설정*/
+}
+
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+/* login-form id를 가진 form안에 있는 input 설정*/
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 25px;
+}
+
+
+/* placeholder 색깔 조정 */
+#login-form input::placeholder{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* input 클릭 했을때 아웃라인 제거 설정 
+   (모든 input에 적용하기 위해 reset.css에 넣음)
+#login-form input:focus {
+  outline: none;
+}*/
+
+/* input 클릭 했을때 border색상 설정 */
+#login-form input:focus {
+  border-color: rgba(255, 110, 27, 0.4);
+  border-width: 3px;
 }
