@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Kokoa Talk</title>
+    <title>Friends - Kokoa Talk</title>
 </head>
 <body>
     <!-------- 상태바 표시줄 -------->
@@ -25,24 +25,36 @@
     </div>
     <!-------- 상태바 표시줄 -------->
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">KokoaTalk에 오신걸 환영합니다!</h1>
-        <p class="welcome-header__text">
-            Kokoa 계정이 있다면 이메일 또는 전화번호로 로그인하세요.
-        </p>
-    </header>
-    
-    <!-- 로그인 form -->
-    <form action="friends.html" method="get" id="login-form">
-        <input name="username" required type="text" placeholder="이메일 또는 전화번호">
-        <input name="password" required type="password" placeholder="Password">
-        <input type="submit" value="Log In">
-        <a href="#">Kokoa 계정 또는 비밀번호 찾기</a>
-    </form>
-    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fas fa-user fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <i class="far fa-comment fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <i class="fas fa-search fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <i class="fas fa-ellipsis-h fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
+
+
+    <!-- code kit설치  아이콘 쓸수있게 -->
     <script 
         src="https://kit.fontawesome.com/f8e4f4a557.js" crossorigin="anonymous">
-    </script> <!-- code kit설치  아이콘 쓸수있게 -->
+    </script> 
 </body>
 </html>

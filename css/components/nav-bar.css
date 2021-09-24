@@ -1,0 +1,13 @@
+.nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    color: white;
+}

@@ -47,8 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+/*============= 내가 추가한 값 =================*/
 
+/* 모든 input들을 클릭할때 아웃라인을 없앰 */
 input:focus {
-    outline: none;
+	outline: none;    
 }
 
