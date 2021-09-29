@@ -1,13 +1,50 @@
 .nav {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 20px 40px;
+    position: fixed; /* 윈도우 기준으로 움직임 스크롤 내려도 고정 */
+    bottom: 0; /* 윈도우 기준으로 bottom 0 설정 */
+    width: 100%; /* 크기 화면에 맞게 조정 */
+    box-sizing: border-box;  /* padding값 무시하고 box사이즈 유지 */
+    background-color: rgba(0, 0, 0, 0.050);
+    padding: 20px 50px; /* 백그라운드에 상하 패딩값 설정 */
+    border-top: 2px solid rgba(0, 0, 0, 0.1)
 }
 
+/* 버튼 리스트들 정렬 하기  */
 .nav__list {
+    display: flex; /* list아이템들 가로로 정렬*/
+    justify-content: space-between; /* 아이템들 균형에 맞게 정렬 */
+}
+ 
+/* 상태바에 있는 아이콘들 색상변경 */
+.nav__link {
+    position: relative;
+    color: #2e363e;
+}
+ 
+/* 챗 알림왔을때 1표시 설정 */
+.nav__notification {
+    background-color: #FF632A;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;  
+    align-items: center; /* 글자 수평정렬 후 가운데 정렬 */
+    color: white;    /* 폰트 컬러 */
+    font-weight: 600; /* 폰트 크기*/
+    position: absolute; /* span item이 챗 아이콘 위로옴 */
+    left: 15px;
+    bottom: 15px;
 }
 
-.nav__link {
-    color: white;
+/* ellipsis 알림 dot 만들기 */
+.nav__dot {
+    background-color: #FF632A;
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    display: flex;
+    position: relative;
+    left: 32px;
+    top:3px
+
 }

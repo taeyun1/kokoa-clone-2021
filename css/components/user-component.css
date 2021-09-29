@@ -1,0 +1,55 @@
+/* 프로필 사진 및 이름, 2>  비트윈으로 좌우 끝으로 정렬 */
+.user-component {
+    justify-content: space-between;
+}
+
+/* Brown 프로필 사진 및 이름  flex box, item-center 적용 */
+.user-component,
+.user-component__column:first-child {
+    display: flex;
+    align-items: center;
+}
+
+/* 프로필 사이즈 조절, 모서리 둥글게, 닉네임이랑 간격주기 */
+.user-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 29px;
+    margin-right: 20px;
+}
+
+/* Channel 타이틀 굵기 및 사이즈 조정 */
+.user-component__title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Channel 밑에 서브로 들어갈 타이틀 간격조정 및 사이즈 조정 */
+.user-component__subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+/* Brown 메인 프로필 사진 사이즈 조정  */
+.user-component__avatar-xl {
+    width: 80px;
+    height: 80px;
+}
+
+/* Channel 프로필 사진 사이즈 조정*/
+.user-component__avatar-sm {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+/* Channel 프로필 이름 굵기 기본값 설정 */
+.user-component__title--not-bold {
+    font-weight: 400;
+}
+
+/* Channel 프로필 오른쪽 끝 글자(2>) 색상 조정 */
+.user-component__column:last-child {
+    color: rgba(0, 0, 0, 0.5);
+}

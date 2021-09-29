@@ -1,9 +1,13 @@
 
 /* 시간 상태바 hack사용하여 가운데 정렬 */
 .status-bar {
+    /*position: fixed; /* 스크롤 내려도 고정 
+    width: 100%;   
+    top:0;*/
     display: flex;
     justify-content: center;
     padding: 5px 3px;
+    
   }
   
   /* 모든 상태바 33%의 폭 설정 */

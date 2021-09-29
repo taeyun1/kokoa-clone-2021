@@ -1,0 +1,32 @@
+#friends-display-link {
+    text-align: center;
+    display: block;
+    background-color: #fafafa;
+    padding: 20px 0px;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+/* i아이콘 색상변경 (아이콘은 text임 font라 생각) */
+#friends-display-link i {
+    color: rgba(0, 0, 0, 0.3);
+} 
+
+/* friends창 좌우 간격 띄우기 */
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+/* friends Channel 구분선 및 간격 띄우기 */
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px; /* border기준으로 위에서 안쪽으로 간격주기*/
+}
+
+.friends-screen__channel-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
