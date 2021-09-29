@@ -1,3 +1,5 @@
+
+/* Friends' Names Display 링크 설정 */
 #friends-display-link {
     text-align: center;
     display: block;
@@ -17,13 +19,14 @@
     padding: 0px var(--horizontal-space);
 }
 
-/* friends Channel 구분선 및 간격 띄우기 */
+/* friends Channel창 구분선 및 간격 띄우기 */
 .friends-screen__channel {
     margin-top: 25px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     padding-top: 15px; /* border기준으로 위에서 안쪽으로 간격주기*/
 }
 
+/* Channel헤더 밑에 간격, Channel 및 위쪽 화살표 컬러 설정 */
 .friends-screen__channel-header {
     display: flex;
     justify-content: space-between;

@@ -34,7 +34,7 @@
   }
   
   /* 110%,배터리,충전중 좌,우 간격 띄우기*/
-  .status-bar__column .fa-battery-full {
+  .status-bar__column .fa-battery-three-quarters {
     margin: 0px 6px;
   }
   

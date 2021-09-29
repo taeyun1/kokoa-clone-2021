@@ -1,17 +1,20 @@
+
+/* Friends 및 검색,뮤직,설정 아이콘 정렬 */
 .screen-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--horizontal-space);
+    padding: var(--horizontal-space); /*패딩25px*/
     
 }
 
+/* 왼쪽 상단 Friends 글자 사이즈 및 굵기 설정 */
 .screen-header__title {
     font-size: 32px;
     font-weight: 600;
 }
 
-/* 아이콘들 사이 띄우기 */
+/* 검색, 뮤직, 설정 아이콘들 사이 띄우기 */
 .screen-header__icons span {
     margin-left: 25px;
 }

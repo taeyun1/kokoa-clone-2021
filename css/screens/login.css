@@ -21,10 +21,11 @@
   }
   
   
+  /* 이메일, 패스워드, Log In, 계정 비번찾기 form 조정 */
   #login-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 30px;
+    display: flex; /* 수평으로 정렬 후 */
+    flex-direction: column; /* 수직상태로 변환 */
+    margin: 0px 30px; /* form 좌우 간격 띄우기 */
   }
   
   /* id가 login-form이 가진 form안에 있는 input 전부 설정*/
