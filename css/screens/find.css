@@ -1,0 +1,141 @@
+/* 클래스 전부 속성 설정 아이콘 및 글자 */
+.find-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 클래스 안에있는 icon들 전부 속성 설정 */
+.find-icons__icon {
+    display: flex;  /*수평*/
+    flex-direction: column; /* 수직 */
+    align-items: center; /* 가운데 정렬 */
+}
+
+/* find-icons__icon 클래스 안에있는 아이콘(i)만 속성 적용 */
+.find-icons__icon i {
+    font-size: 35px;
+}
+
+/* find-icons__icon 클래스 안에있는 span만 속성 적용 */
+.find-icons__icon span {
+    margin-top: 18px;
+}
+
+/* 추천친구 클래스에 선 위아래 설정 */
+.recommended-friends {
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+    padding: 25px 0px;
+    margin: 25px 0px;
+}
+
+/* title 클래스 속성 설정 */
+.recommended-friends__title {
+    font-size: 16px;
+    color: var(--color-gray); /* 0.5 */
+}
+
+/* recommended-friends 클래스 안에 있는 span만 속성 설정 */
+.recommended-friends span {
+    margin: 100px 0;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-gray); /* 0.5 */
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.open-chat__header span {
+    opacity: 0.5;
+}
+
+
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.open-post__title {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+/* hashtags 클래스의 소문자글자를 대문자로 변환 */
+.open-post__hashtags {
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+/* 802 members, 프로필, divider, Active의 container 설정 */
+.open-post__members {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+/* 802 members 프로필 설정 */
+.open-post__members img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* 802 members 설정 */
+.open-post__members-count {
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+/* .open-post__members 안에있는 divider */
+.open-post__members .divider {
+    width: 1px;
+    height: 13px;
+    margin: 0px 5px;
+    background-color: rgba(0, 0, 0, 0.3);  
+}
+
+/* Active 글씨 설정 */
+.open-post__members-status {
+    font-weight: 600;
+    color: #ffb0e0
+}
+
+/* 사진안에 ♥326이 들어갈수 있도록 relative를 설정야함 */
+.open-post__photo {
+    position: relative;
+}
+.open-post__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 7px;
+}
+
+
+
+.open-post__heart-count {
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 13px;
+}
+
+.open-post__heart-count span {
+    margin-left: 3px;
+}

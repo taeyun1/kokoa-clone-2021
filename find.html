@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Friends - Kokoa Talk</title>
+    <title>Find - Kokoa Talk</title>
 </head>
 <body>
     <!-------- 상태바 표시줄 -------->
@@ -27,14 +27,12 @@
 
     <!-- Friends 헤더 및 검색, 뮤직, 설정 아이콘 표시 -->
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+        <h1 class="screen-header__title">Find</h1>
         <div class="screen-header__icons">
             <span>
               <a href="index.html"><i class="fas fa-search fa-lg"></i></a> <!--검색 아이콘-->
            </span>
-           <span>
-                <a href="#"><i class="fas fa-music fa-lg"></i></a> <!--음악 아이콘--> 
-            </span>
+
             <span>
                 <a href="index.html"><i class="fas fa-cog fa-lg"></i></a> <!--설정 아이콘-->
             </span>
@@ -42,33 +40,112 @@
     </header>
     <!-- Friends 헤더 및 검색, 뮤직, 설정 아이콘 표시 -->
 
-    <!-- Friends' Names Display 표시 줄 -->
+    <!-- Friends' Names Display 표시 줄 
     <a id="friends-display-link" href="#">
         <i class="fas fa-info-circle"></i>Friends' Names Display
-        <i class="fas fa-chevron-right fa-xs"></i> <!--화살표-->
+        <i class="fas fa-chevron-right fa-xs"></i> 
     </a>
-    <!-- Friends' Names Display 표시 줄 -->
+    -->
 
-    <main class="friends-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="screenshot/sea.jpg" class="user-component__avatar user-component__avatar-xl">
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Brown</h4>
-                    <!-- 부제목 <h6 class="user-component__subtitle">안녕 난 브라운이야!</h6> -->
-                </div>
+
+    <!-- Find 헤더제목 밑에있는 메인창 -->
+    <main class="main-screen">
+        <div class="find-icons">
+
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code</span>
             </div>
-            <div class="user-component__column"></div>
+
+            <div class="find-icons__icon">
+                <i class="far fa-address-book"></i>
+                <span>Add by Contacts</span>
+            </div>
+
+            <div class="find-icons__icon">
+                <i class="fas fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+
+            <div class="find-icons__icon">
+                <i class="far fa-envelope"></i>
+                <span>Invite</span>
+            </div>
         </div>
 
-        <!-- 채널 구분선  -->
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no reconmmended friends.</span>
+        </div>
+
+        <!-- Open Chat 표시줄  -->
+
+        <!-- #BTS 오픈 채팅방 -->
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>
+                <span>
+                    Go to Openchat Home <a href="#"><i class="fas fa-chevron-right fa-xs"></i></a>
+                </span>
+            </div>
+
+            <div class="open-post">
+
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#BTS</h5>
+                    <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                    <div class="open-post__members">
+                        <img src="screenshot/kokkili.jpg">
+                        <span class="open-post__members-count">802 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__members-status">Active</span>
+                    </div>
+                </div>
+
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="screenshot/kokkili.jpg">
+                        <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>326</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bts Gang~ 오픈 채팅방  -->
+        <div class="open-post">
+                
+            <div class="open-post__column">
+                <h5 class="open-post__title">Bts Gang~</h5>
+                <h6 class="open-post__hashtags">#englishonly #ipurpleyou #jimin #taeta...</h6>
+                <div class="open-post__members">
+                    <img src="screenshot/chita.jpg">
+                    <span class="open-post__members-count">299 members</span>
+                    <div class="divider"></div>
+                    <span class="open-post__members-status">Active</span>
+                </div>
+            </div>
+
+            <div class="open-post__column">
+                <div class="open-post__photo">
+                    <img src="screenshot/chita.jpg">
+                    <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>326</span></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+        <!-- 채널 구분선  
         <div class="friends-screen__channel">
             <div class="friends-screen__channel-header">
                 <span>Channel</span>
                 <i class="fas fa-chevron-up fa-xs"></i>
             </div>
+            -->
 
-            <!-- 채널 user component -->
+            <!-- 채널 user component 
             <div class="user-component">
                 <div class="user-component__column">
                     <img src="screenshot/sea.jpg" class="user-component__avatar user-component__avatar-sm">
@@ -77,16 +154,11 @@
                     </div>
                 </div>
                 <div class="user-component__column">
-                    <div>
-                        <span>2</span>
-                        <i class="fas fa-chevron-right fa-xs"></i>
-                    </div>
+                    <span>2</span>
+                    <i class="fas fa-chevron-right fa-xs"></i>
                 </div>
             </div>
-        </div>
-    </main>
-
-    
+            -->
 
 
     <!-- 맨 하단 navigator 표시 줄 -->
@@ -95,7 +167,7 @@
             
             <li class="nav__btn">
                 <a class="nav__link" href="friends.html">
-                    <i class="fas fa-user fa-2x"></i> 
+                    <i class="far fa-user fa-2x"></i> 
                 </a>
             </li>
 
@@ -108,7 +180,7 @@
 
             <li class="nav__btn">
                 <a class="nav__link" href="find.html">
-                    <i class="fas fa-search fa-2x"></i>
+                    <i class="fas fa-search-plus fa-2x"></i>
                 </a>
             </li>
 

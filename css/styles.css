@@ -9,14 +9,17 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
+
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 body {
   /* 폰트적용 */
-  height: 130vh;
+  height: 140vh;
   font-family: 'Noto Sans KR', sans-serif;
   color: #2e363e;
 }

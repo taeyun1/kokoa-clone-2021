@@ -49,7 +49,18 @@
     font-weight: 400;
 }
 
-/* Channel 프로필 오른쪽 끝 글자(2>) 색상 조정 */
+/* 2개의 user-component__column 중에 마지막 컬럼 설정 */
+/* Channel 프로필 오른쪽 끝 조정 */
 .user-component__column:last-child {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
+
+/* Channel 프로필 오른쪽 끝 시간 설정 */
+.user-component__time {
+    display: block; /*span이기 떄문에 block 으로 바꿔야 마진설정가능 */
+    margin-bottom: 10px; 
+}
+

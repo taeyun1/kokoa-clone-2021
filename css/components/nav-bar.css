@@ -22,15 +22,6 @@
  
 /* 챗 알림왔을때 1표시 설정 */
 .nav__notification {
-    background-color: #FF632A;
-    width: 25px;
-    height: 25px;
-    border-radius: 12.5px;
-    display: flex;
-    justify-content: center;  
-    align-items: center; /* 글자 수평정렬 후 가운데 정렬 */
-    color: white;    /* 폰트 컬러 */
-    font-weight: 600; /* 폰트 크기*/
     position: absolute; /* span item이 챗 아이콘 위로옴 */
     left: 15px;
     bottom: 15px;

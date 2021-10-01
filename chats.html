@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Friends - Kokoa Talk</title>
+    <title>Chats - Kokoa Talk</title>
 </head>
 <body>
     <!-------- 상태바 표시줄 -------->
@@ -27,10 +27,13 @@
 
     <!-- Friends 헤더 및 검색, 뮤직, 설정 아이콘 표시 -->
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+        <h1 class="screen-header__title">Chats</h1>
         <div class="screen-header__icons">
             <span>
               <a href="index.html"><i class="fas fa-search fa-lg"></i></a> <!--검색 아이콘-->
+           </span>
+           <span>
+               <a href="#"><i class="far fa-comment-dots fa-lg"></i></a>
            </span>
            <span>
                 <a href="#"><i class="fas fa-music fa-lg"></i></a> <!--음악 아이콘--> 
@@ -40,35 +43,41 @@
             </span>
         </div>
     </header>
-    <!-- Friends 헤더 및 검색, 뮤직, 설정 아이콘 표시 -->
+    <!------------------------------------------------------------>
 
-    <!-- Friends' Names Display 표시 줄 -->
+    <!-- Friends' Names Display 표시 줄 
     <a id="friends-display-link" href="#">
         <i class="fas fa-info-circle"></i>Friends' Names Display
-        <i class="fas fa-chevron-right fa-xs"></i> <!--화살표-->
+        <i class="fas fa-chevron-right fa-xs"></i> 
     </a>
-    <!-- Friends' Names Display 표시 줄 -->
+    -->
 
-    <main class="friends-screen">
+
+    <main class="main-screen">
         <div class="user-component">
             <div class="user-component__column">
                 <img src="screenshot/sea.jpg" class="user-component__avatar user-component__avatar-xl">
                 <div class="user-component__text">
                     <h4 class="user-component__title">Brown</h4>
-                    <!-- 부제목 <h6 class="user-component__subtitle">안녕 난 브라운이야!</h6> -->
+                    <h6 class="user-component__subtitle">내 계정 정보를 확인하세요.</h6>
                 </div>
             </div>
-            <div class="user-component__column"></div>
+            <div class="user-component__column">
+                <span class="user-component__time">21:22</span>
+                <div class="badge">3</div>
+            </div>
         </div>
+    </main>
 
-        <!-- 채널 구분선  -->
+        <!-- 채널 구분선  
         <div class="friends-screen__channel">
             <div class="friends-screen__channel-header">
                 <span>Channel</span>
                 <i class="fas fa-chevron-up fa-xs"></i>
             </div>
+            -->
 
-            <!-- 채널 user component -->
+            <!-- 채널 user component 
             <div class="user-component">
                 <div class="user-component__column">
                     <img src="screenshot/sea.jpg" class="user-component__avatar user-component__avatar-sm">
@@ -77,14 +86,12 @@
                     </div>
                 </div>
                 <div class="user-component__column">
-                    <div>
-                        <span>2</span>
-                        <i class="fas fa-chevron-right fa-xs"></i>
-                    </div>
+                    <span>2</span>
+                    <i class="fas fa-chevron-right fa-xs"></i>
                 </div>
             </div>
-        </div>
-    </main>
+            -->
+    
 
     
 
@@ -95,14 +102,14 @@
             
             <li class="nav__btn">
                 <a class="nav__link" href="friends.html">
-                    <i class="fas fa-user fa-2x"></i> 
+                    <i class="far fa-user fa-2x"></i> 
                 </a>
             </li>
 
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
                     <span class="nav__notification badge">3</span>
-                    <i class="far fa-comment fa-2x"></i>
+                    <i class="fas fa-comment fa-2x"></i>
                 </a>
             </li>
 

@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space); /*패딩25px*/
-    
+    margin-bottom: 15px;
 }
 
 /* 왼쪽 상단 Friends 글자 사이즈 및 굵기 설정 */

@@ -1,0 +1,13 @@
+
+/* 알림 표시  설정*/
+.badge {
+    background-color: #FF632A;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; /* 글자 수평정렬 후 가운데 정렬 */
+    color: white;    /* 폰트 컬러 */
+    font-weight: 600; /* 폰트 크기*/
+}

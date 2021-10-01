@@ -7,6 +7,8 @@
     padding: 20px 0px;
     font-size: 20px;
     margin-bottom: 13px;
+    margin-top: -15px; /* screen-header.css에 margin-bottom을 추가한게 있어 
+                        너무 간격이 커서 조정*/
 }
 
 /* i아이콘 색상변경 (아이콘은 text임 font라 생각) */
@@ -22,7 +24,7 @@
 /* friends Channel창 구분선 및 간격 띄우기 */
 .friends-screen__channel {
     margin-top: 25px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: var(--main-border);
     padding-top: 15px; /* border기준으로 위에서 안쪽으로 간격주기*/
 }
 
