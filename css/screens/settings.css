@@ -1,0 +1,29 @@
+#setting-body {
+    /*background-color: #F9E000;*/
+    font-weight:lighter;
+    
+}
+
+.settins-screen {
+    color: #2e363e; /* 2e363e 카톡검정 #3B1C1 카톡갈색C */
+    opacity: 0.9;
+}
+
+.settings__setting {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settings__setting i {
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.settings__setting-column:last-child {
+    opacity: 0.5;
+}
+

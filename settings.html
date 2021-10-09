@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>설정 - Kokoa Talk</title>
+</head>
+<body id="setting-body">
+    <!-------- 상태바 표시줄 -------->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i> <!-- 배터리 아이콘 -->
+            <i class="fas fa-bolt fa-lg"></i> <!-- 충전중 아이콘 -->
+        </div>
+    </div>
+    <!-------- 상태바 표시줄 -------->
+
+    <!-- Settings 상단 표시줄  -->
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="more.html"><i class="fas fa-angle-left fa-2x"></i></a>
+        </div>
+
+        <div class="alt-header__column">
+            <h1 class="alt-header__tiltle">Settings</h1>
+        </div>
+
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-2x"></i>
+        </div>
+
+    </header>
+    <main class="main-screen settins-screen">
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </div>
+                <div class="settings__setting-column"></div>
+            </li>
+
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-flask"></i>
+                    <span>Kakao Lab</span>
+                </div>
+                <div class="settings__setting-column"></div>
+            </li>
+
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings__setting-column">Latest Version</div>
+            </li>
+
+        </ul>
+    </main>
+
+
+
+
+
+
+
+    <!-- 맨 하단 navigator 표시 줄 -->
+    <nav class="nav">
+        <ul class="nav__list">
+            
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i> 
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">3</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search-plus fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__dot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 화면이 커질때 경고창 -->
+    <div id="no-mobile">
+        <span>화면이 너무 큽니다. 창을 줄여주세요 ㅠㅠ</span>
+    </div>
+
+    <!-- code kit설치  아이콘 쓸수있게 -->
+    <script 
+        src="https://kit.fontawesome.com/f8e4f4a557.js" crossorigin="anonymous">
+    </script> 
+</body>
+</html>
+<!-- Asome Font Size
+<i class="fas fa-camera fa-xs"></i>
+<i class="fas fa-camera fa-sm"></i>
+<i class="fas fa-camera fa-lg"></i>
+<i class="fas fa-camera fa-2x"></i>
+<i class="fas fa-camera fa-3x"></i>
+<i class="fas fa-camera fa-5x"></i>
+<i class="fas fa-camera fa-7x"></i>
+<i class="fas fa-camera fa-10x"></i> 
+-->

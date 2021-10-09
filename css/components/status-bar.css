@@ -7,9 +7,9 @@
     display: flex;
     justify-content: center;
     padding: 5px 3px;
-    
   }
   
+  /* 시간 상태바 hack사용하여 가운데 정렬 */
   /* 모든 상태바 33%의 폭 설정 */
   .status-bar__column {
     width: 33%;

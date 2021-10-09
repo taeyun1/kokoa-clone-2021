@@ -18,3 +18,37 @@
 .screen-header__icons span {
     margin-left: 25px;
 }
+
+/* 헤더에 있는 설정아이콘 애니메이션 */
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg); /* Z축으로 360도 회전*/
+    }
+}
+
+/* 헤더에 있는 설정아이콘에만 적용 */
+.screen-header__icons .fa-cog:hover {
+    animation: rotateCog 1.3s linear infinite;
+}
+
+/* 헤더에 있는 검색아이콘 애니메이션 */
+@keyframes rotateSearch {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(2.5); /* 크기 조정 */
+    }
+    100%
+    {
+        transform: none;
+    }
+}
+
+/* 헤더에 있는 검색아이콘에만 적용 */
+.screen-header__icons .fa-search:hover {
+    animation: rotateSearch 1s ease-in-out;
+}

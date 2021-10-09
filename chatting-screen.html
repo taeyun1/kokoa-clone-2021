@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>채팅창 - Kokoa Talk</title>
+</head>
+<body id="chatting-screen">
+    <!-------- 상태바 표시줄 -------->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i> <!-- 배터리 아이콘 -->
+            <i class="fas fa-bolt fa-lg"></i> <!-- 충전중 아이콘 -->
+        </div>
+    </div>
+    <!-------- 상태바 표시줄 -------->
+
+    <!-- 채팅방 상단 표시줄  -->
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
+        </div>
+
+        <div class="alt-header__column">
+            <h1 class="alt-header__tiltle">춤추는 어피치</h1>
+        </div>
+
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+
+    </header>
+    <main class="main-screen main-chat">
+        <div class="caht__timestamp">
+            2021년 10월 5일 화요일
+        </div>
+
+        <!-- 상대방이 보내는 메세지 라인  -->
+        <div class="message-row">
+            <img src="screenshot/chita.jpg">
+            <div class="message-row__content">
+                <span class="message__name">춤추는 어피치</span>
+                <div class="message__info">
+                    <span class="message__bubble">안녕하세요.</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 내가 보내는 메세지 라인  -->
+        <div class="message-row message-row--me">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">안녕하세요.</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 채팅입력창 -->
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square fa-2x"></i>
+        </div>
+
+        <div class="reply__column">
+            <input type="text" placeholder="내용을 입력하세요.">
+            <i class="far fa-smile-wink fa-lg"></i>
+            <button>
+                <i class="fas fa-arrow-up fa-lg"></i>
+            </button>
+        </div>
+
+    </form>
+
+    <!-- 화면이 커질때 경고창 -->
+    <div id="no-mobile">
+        <span>화면이 너무 큽니다. 창을 줄여주세요 ㅠㅠ</span>
+    </div>
+
+    <!-- code kit설치  아이콘 쓸수있게 -->
+    <script 
+        src="https://kit.fontawesome.com/f8e4f4a557.js" crossorigin="anonymous">
+    </script> 
+</body>
+</html>
+<!-- Asome Font Size
+<i class="fas fa-camera fa-xs"></i>
+<i class="fas fa-camera fa-sm"></i>
+<i class="fas fa-camera fa-lg"></i>
+<i class="fas fa-camera fa-2x"></i>
+<i class="fas fa-camera fa-3x"></i>
+<i class="fas fa-camera fa-5x"></i>
+<i class="fas fa-camera fa-7x"></i>
+<i class="fas fa-camera fa-10x"></i> 
+-->

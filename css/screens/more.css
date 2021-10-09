@@ -1,0 +1,43 @@
+/* more-screen안에 있는 icon-row클래스 설정  */
+.more-screen .icon-row {
+    margin-top: 35px;
+}
+
+.more-suggestions {
+    margin-top: 50px;
+    border-top: var(--main-border);
+    padding-top: 40px;
+}
+
+.more-suggestions__title {
+    margin-bottom: 30px;
+}
+
+
+.more-suggestions__icons {
+    display: flex;
+}
+
+/* 따옴표 이미지와 글자를 가운데 정렬 */
+.more-suggestions__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.more-suggestions__icon-image {
+    width: 60px;
+    height: 60px;
+    background-color: var(--yew);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* 아이콘은 text이기 때문에 사이즈 및 컬러 설정가능 */
+.more-suggestions__icon-image i {
+    color: white;
+}

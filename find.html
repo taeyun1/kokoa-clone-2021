@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Find - Kokoa Talk</title>
+    <title>찾기 - Kokoa Talk</title>
 </head>
 <body>
     <!-------- 상태바 표시줄 -------->
@@ -50,24 +50,24 @@
 
     <!-- Find 헤더제목 밑에있는 메인창 -->
     <main class="main-screen">
-        <div class="find-icons">
+        <div class="icon-row">
 
-            <div class="find-icons__icon">
+            <div class="icon-row__icon">
                 <i class="fas fa-qrcode"></i>
                 <span>QR Code</span>
             </div>
 
-            <div class="find-icons__icon">
+            <div class="icon-row__icon">
                 <i class="far fa-address-book"></i>
                 <span>Add by Contacts</span>
             </div>
 
-            <div class="find-icons__icon">
+            <div class="icon-row__icon">
                 <i class="fas fa-fingerprint"></i>
                 <span>Add by ID</span>
             </div>
 
-            <div class="find-icons__icon">
+            <div class="icon-row__icon">
                 <i class="far fa-envelope"></i>
                 <span>Invite</span>
             </div>
@@ -79,16 +79,15 @@
         </div>
 
         <!-- Open Chat 표시줄  -->
-
-        <!-- #BTS 오픈 채팅방 -->
         <div class="open-chat">
             <div class="open-chat__header">
                 <h4>Open Chat</h4>
                 <span>
-                    Go to Openchat Home <a href="#"><i class="fas fa-chevron-right fa-xs"></i></a>
+                    <a href="#">Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i></a>
                 </span>
             </div>
 
+            <!-- BTS 오픈 채팅방  -->
             <div class="open-post">
 
                 <div class="open-post__column">
@@ -129,7 +128,7 @@
             <div class="open-post__column">
                 <div class="open-post__photo">
                     <img src="screenshot/chita.jpg">
-                    <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>326</span></div>
+                    <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>263</span></div>
                 </div>
             </div>
         </div>
@@ -193,7 +192,10 @@
         </ul>
     </nav>
 
-
+    <!-- 화면이 커질때 경고창 -->
+    <div id="no-mobile">
+        <span>화면이 너무 큽니다. 창을 줄여주세요 ㅠㅠ</span>
+    </div>
 
     <!-- code kit설치  아이콘 쓸수있게 -->
     <script 

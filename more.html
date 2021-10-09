@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>More - Kokoa Talk</title>
+    <title>더보기 - Kokoa Talk</title>
 </head>
 <body>
     <!-------- 상태바 표시줄 -------->
@@ -25,7 +25,7 @@
     </div>
     <!-------- 상태바 표시줄 -------->
 
-    <!-- Friends 헤더 및 검색, 뮤직, 설정 아이콘 표시 -->
+    <!-- More 헤더 및 검색, 뮤직, 설정 아이콘 표시 -->
     <header class="screen-header">
         <h1 class="screen-header__title">More</h1>
         <div class="screen-header__icons">
@@ -38,7 +38,7 @@
            </span>
 
             <span>
-                <a href="index.html"><i class="fas fa-cog fa-lg"></i></a> <!--설정 아이콘-->
+                <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a> <!--설정 아이콘-->
             </span>
         </div>
     </header>
@@ -46,10 +46,72 @@
 
 
 
-    <!-- Find 헤더제목 밑에있는 메인창 -->
-    <main class="main-screen">
+    <!-- More 헤더제목 밑에있는 메인창 -->
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="screenshot/sea.jpg" class="user-component__avatar user-component__avatar-xl">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Brown</h4>
+                    <h6 class="user-component__subtitle">+82 10-2830-9126 <i class="fas fa-exclamation-circle"></i></h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
 
+        <div class="icon-row">
+            <div class="icon-row__icon">               
+                <a href="#"><i class="far fa-calendar-check"></i></a>
+                <span>Calendar</span>
+            </div>
 
+            <div class="icon-row__icon">
+                <a href="#"><i class="fas fa-box-open"></i></a>
+                <span>Talk Drive</span>
+            </div>
+
+            <div class="icon-row__icon">
+                <a href="#"><i class="far fa-smile-wink"></i></a>
+                <span>Emoticons</span>
+            </div>
+
+            <div class="icon-row__icon">
+                <a href="#"><i class="fas fa-brush"></i></a>
+                <span>Themes</span>
+            </div>
+        </div>
+
+        
+        <div class="icon-row">
+            <div class="icon-row__icon">               
+                <a href="#"><i class="fas fa-desktop"></i></a>
+                <span>Desktop</span>
+            </div>
+        </div> 
+
+        <!-- suggestions 표시줄 -->
+        <div class="more-suggestions"></div>
+            <h4 class="more-suggestions__title">Suggestions</h4>
+
+        <div class="more-suggestions__icons">
+            <div class="more-suggestions__icon">
+                <div class="more-suggestions__icon-image">
+                    <a href="#"><i class="fas fa-quote-right fa-2x"></i></a>
+                </div>
+                <span class="more-suggestions__icon-text">Kokoa Story</span>
+            </div>
+
+            <div class="more-suggestions__icon">
+                <div class="more-suggestions__icon-image">
+                    <a href="#"><i class="fas fa-gamepad fa-2x"></i></a>
+            </div>
+                <span class="more-suggestions__icon-text">Kokoa Game</span>
+            </div>
+        </div>
+        
+ 
     </main>
 
 
@@ -86,7 +148,10 @@
         </ul>
     </nav>
 
-
+    <!-- 화면이 커질때 경고창 -->
+    <div id="no-mobile">
+        <span>화면이 너무 큽니다. 창을 줄여주세요 ㅠㅠ</span>
+    </div>
 
     <!-- code kit설치  아이콘 쓸수있게 -->
     <script 

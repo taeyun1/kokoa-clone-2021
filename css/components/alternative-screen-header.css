@@ -1,0 +1,40 @@
+.alt-header {
+    padding: var(--horizontal-space); /*패딩25px*/
+    margin-bottom: 15px;
+
+    /* 설정 상태바 css핵을 이용해 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 설정 상태바 css핵을 이용해 가운데 정렬 */
+.alt-header__column {
+    width: 33%;
+}
+
+.alt-header__tiltle {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* 설정 상태바 css핵을 이용해 가운데 정렬 */
+.alt-header__column:first-child {
+    margin-right: auto;
+}
+
+/* 설정 상태바 css핵을 이용해 가운데 정렬 */
+.alt-header__column:nth-child(2) {
+    text-align: center;
+}
+
+/* 설정 상태바 css핵을 이용해 가운데 정렬 */
+.alt-header__column:last-child {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}  
+
+.alt-header__column span:last-child {
+    margin-left: 30px;
+}

@@ -1,25 +1,3 @@
-/* 클래스 전부 속성 설정 아이콘 및 글자 */
-.find-icons {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* 클래스 안에있는 icon들 전부 속성 설정 */
-.find-icons__icon {
-    display: flex;  /*수평*/
-    flex-direction: column; /* 수직 */
-    align-items: center; /* 가운데 정렬 */
-}
-
-/* find-icons__icon 클래스 안에있는 아이콘(i)만 속성 적용 */
-.find-icons__icon i {
-    font-size: 35px;
-}
-
-/* find-icons__icon 클래스 안에있는 span만 속성 적용 */
-.find-icons__icon span {
-    margin-top: 18px;
-}
 
 /* 추천친구 클래스에 선 위아래 설정 */
 .recommended-friends {
@@ -139,3 +117,40 @@
 .open-post__heart-count span {
     margin-left: 3px;
 }
+
+/* 하트아이콘 애니메이션 */
+@keyframes heartBeat {
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(2.5);
+
+    }
+    100%{
+        color: white;
+        transform: none;
+
+    }
+}
+
+/* 클래스 안의 하트아이콘 애니메이션 설정 */
+.open-post__heart-count:hover i {
+    animation: heartBeat 1s linear infinite;
+    will-change: transform;
+}
+
+
+/* 하트아이콘 트랜스폼 스케일을 1.1로 하면 애니메이션이 흔들려 보임 불안정 */
+
+/* will-change는 기본적으로 브라우저에게 뭔가가 바뀔거라고 말해줌
+   브라우저에게 뭔가가 바뀔거라고 말하면서 애니메이션을 좀 더 낫게 만듬 
+   부드럽게 바뀜.  바뀔거라는걸 알기때문 */
+
+/* will-change는 그래픽카드를 이용해 애니메이션을 가속화 함 
+   브라우저도 도와줌*/
+
+/* will-change는 항상 쓰지 않고 불안정할때 사용 */
+
