@@ -14,8 +14,9 @@
 }
 
 /* 화면 크기가 645px보다 작으면 경고창 없애기 */
-@media screen and (max-width:680px) {
+@media screen and (max-width:10000px) {
     #no-mobile {
         display: none;
     }
 }
+
