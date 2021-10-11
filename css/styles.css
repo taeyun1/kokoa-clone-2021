@@ -14,7 +14,6 @@
 @import "components/alternative-screen-header.css";
 @import "components/no-mobile.css";
 
-
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
@@ -23,11 +22,9 @@
 @import "screens/settings.css";
 @import "screens/chatting.css";
 
-
 body {
   /* 폰트적용 */
   height: 140vh;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #2e363e;
 }
-

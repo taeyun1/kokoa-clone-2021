@@ -1,85 +1,82 @@
 .nav {
-    position: fixed; /* 윈도우 기준으로 움직임 스크롤 내려도 고정 */
-    bottom: 0; /* 윈도우 기준으로 bottom 0 설정 */
-    width: 100%; /* 크기 화면에 맞게 조정 */
-    box-sizing: border-box;  /* padding값 무시하고 box사이즈 유지 */
-    background-color: rgb(245, 245, 245);
-    padding: 20px 50px; /* 백그라운드에 상하 패딩값 설정 */
-    border-top: 2px solid rgba(0, 0, 0, 0.1)
+  position: fixed; /* 윈도우 기준으로 움직임 스크롤 내려도 고정 */
+  bottom: 0; /* 윈도우 기준으로 bottom 0 설정 */
+  width: 100%; /* 크기 화면에 맞게 조정 */
+  box-sizing: border-box; /* padding값 무시하고 box사이즈 유지 */
+  background-color: rgb(245, 245, 245);
+  padding: 20px 50px; /* 백그라운드에 상하 패딩값 설정 */
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 /* 버튼 리스트들 정렬 하기  */
 .nav__list {
-    display: flex; /* list아이템들 가로로 정렬*/
-    justify-content: space-between; /* 아이템들 균형에 맞게 정렬 */
+  display: flex; /* list아이템들 가로로 정렬*/
+  justify-content: space-between; /* 아이템들 균형에 맞게 정렬 */
 }
- 
+
 /* 상태바에 있는 아이콘들 색상변경 */
 .nav__link {
-    position: relative;
-    color: #2e363e;
+  position: relative;
+  color: #2e363e;
 }
- 
 
 /* ellipsis 알림 dot 만들기 */
 .nav__dot {
-    background-color: #FF632A;
-    width: 7px;
-    height: 7px;
-    border-radius: 3.5px;
-    display: flex;
-    position: relative;
-    left: 32px;
-    top:3px;
+  background-color: #ff632a;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  display: flex;
+  position: relative;
+  left: 32px;
+  top: 3px;
 }
 
 /* 챗 알림표시 에니메이션 */
 @keyframes notificationAnimation {
-    0%{
-        transform: none;
-    }
-    50%{
-        transform: translateY(-5px) rotateY(360deg); /* 위아래로 -5px 반복, 좌우로 360도 회전 */
-    }
-    100%{
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg); /* 위아래로 -5px 반복, 좌우로 360도 회전 */
+  }
+  100% {
+    transform: none;
+  }
 }
 
 /* 챗 알림왔을때 1표시 설정 */
 .nav__notification {
-    position: absolute; /* span item이 챗 아이콘 위로옴 */
-    left: 15px;
-    bottom: 15px;
-    animation: notificationAnimation 2s ease-in-out infinite;
+  position: absolute; /* span item이 챗 아이콘 위로옴 */
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 
-
 @keyframes navBtnAnimation {
-    from{
-        
-        opacity: 0;
-    }
-    to{
-        transform: none;
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 .nav__btn {
-    transform: translateY(50px);
-    opacity: 0;
-    animation: navBtnAnimation 0.3s ease-in-out forwards;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: navBtnAnimation 0.3s ease-in-out forwards;
 }
 
 .nav__btn:nth-child(2) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .nav__btn:nth-child(3) {
-    animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .nav__btn:last-child {
-    animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }

@@ -1,129 +1,126 @@
 /* 배경색을 바꾸기 위해 body에 id생성 후 설정 */
 #chatting-screen {
-    background-color: #abc1d1;
-    height: 500vh; /* 채팅창을 스크롤 할 수 있게 늘림 */
+  background-color: #abc1d1;
+  height: 500vh; /* 채팅창을 스크롤 할 수 있게 늘림 */
 }
 
 /* 채팅방 상단바 및 상태바 위치 고정 */
 #chatting-screen .alt-header,
 #chatting-screen .status-bar {
-    top: 0px;
-    position: fixed;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #abc1d1; /* 상단바 뒤에 있는것들이 안보이게 하기위해 설정 */
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1; /* 상단바 뒤에 있는것들이 안보이게 하기위해 설정 */
 }
 
 /* z-index은 레이아웃 같은거임 element에 대한 순서 */
 #chatting-screen .status-bar {
-    z-index: 2; /* alt-header보다 위로감  */
+  z-index: 2; /* alt-header보다 위로감  */
 }
 /* status바와 alt-header바는 main을 덮고 있음 */
 /* chatting-screen안에 있는 상단바 간격 조정 */
 #chatting-screen .alt-header {
-    top: 20px;
-    z-index: 1; /* status-bar보다 아래로 옴 */
+  top: 20px;
+  z-index: 1; /* status-bar보다 아래로 옴 */
 }
 
 /* 채팅창 애니메이션  */
 /* 밑에서 부터 위로 사라졌다 나타나게 적용 */
 @keyframes fadeIn {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: none;
-        opacity: 1;
-    }
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 /* 채팅창 애니메이션 */
 .main-chat {
-    margin-top: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    animation: fadeIn 0.5s linear;
+  animation: fadeIn 0.5s linear;
 }
 
-.caht__timestamp{
-    color: white;
-    background-color: #92a4b2;
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 25px;
-    margin-bottom: 25px;
+.caht__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 25px;
+  margin-bottom: 25px;
 }
-
-
 
 /* 메세지 라인 설정 */
 .message-row {
-    width: 100%; /* 양옆 꽉차게 늘리기 */
-    display: flex;
-    margin-bottom: 25px;
+  width: 100%; /* 양옆 꽉차게 늘리기 */
+  display: flex;
+  margin-bottom: 25px;
 }
 
 /* 채팅 프로필(사진) 설정 */
 .message-row img {
-    width: 50px;
-    height: 50px;
-    border-radius: 40%;
-    margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-right: 10px;
 }
 
 /* 닉네임 box 설정 */
 .message__name {
-    opacity: 0.8;
-    font-size: 14px;
-    margin-bottom: 7px; 
-    display: block; /* span은 마진 상하를 넣을수 없으니 블록으로 변경 */
+  opacity: 0.8;
+  font-size: 14px;
+  margin-bottom: 7px;
+  display: block; /* span은 마진 상하를 넣을수 없으니 블록으로 변경 */
 }
 
 /* 말풍선 만들기 */
 .message__bubble {
-    background-color: white;
-    padding: 10px 12px;
-    font-size: 18px;
-    border-radius: 15px;
-    border-top-left-radius: 0px; /* 왼쪽 위 모서리 설정 */
-    margin-right: 5px;
+  background-color: white;
+  padding: 10px 12px;
+  font-size: 18px;
+  border-radius: 15px;
+  border-top-left-radius: 0px; /* 왼쪽 위 모서리 설정 */
+  margin-right: 5px;
 }
 
 /* 말풍선 및 시간 위치 설정 */
 .message__info {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* 21:27 글자 설정 */
 .message__time {
-    opacity: 0.8;
-    font-size: 13px;
+  opacity: 0.8;
+  font-size: 13px;
 }
 
 /* 내가 보내는 메세지 라인 설정 */
 .message-row--me {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 /* 내가 보내는 메세지 말풍선 설정 */
 /* .message-row--me안에있는 .message__bubble선택  */
 .message-row--me .message__bubble {
-    background-color: var(--yew);
-    border-top-right-radius: 0px;
-    border-top-left-radius: 15px;
-    margin-right: 0px;
-    margin-left: 5px;
+  background-color: var(--yew);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
 }
 
 /* 21:27 위치 바꾸기  */
 .message-row--me .message__info {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 
 /* 21:27 위치 바꾸기 
 .message-row--me .message__bubble {
@@ -137,76 +134,72 @@
 
 /* 채팅 입력창 설정 */
 .reply {
-    position: fixed; /* 고정 */
-    bottom: 0;      /* 맨 하단으로 */
-    width: 100%;    /* 좌우크기는 화면 꽉차게 */
-    background-color: white; /* 바탕색은 흰색 */
-    display: flex;     /* 옆으로 일렬로 정렬 */
-    justify-content: space-between; 
-    padding: 5px 25px;
-    align-items: center;
-    box-sizing: border-box; /* 패딩값 무시 */
-    transition: transform 0.35s ease-in-out; /* 입력창 내려갈때 설정 */
+  position: fixed; /* 고정 */
+  bottom: 0; /* 맨 하단으로 */
+  width: 100%; /* 좌우크기는 화면 꽉차게 */
+  background-color: white; /* 바탕색은 흰색 */
+  display: flex; /* 옆으로 일렬로 정렬 */
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box; /* 패딩값 무시 */
+  transition: transform 0.35s ease-in-out; /* 입력창 내려갈때 설정 */
 }
 
-
 .reply i {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .reply__column button i {
-    opacity: 1;
+  opacity: 1;
 }
 
 .reply .reply__column:first-child {
-    width: 10%;
+  width: 10%;
 }
 
-
 .reply .reply__column:last-child {
-    width: 90%;
-    position: relative;
+  width: 90%;
+  position: relative;
 }
 
 /* reply안에 있는 input창만 적용 */
-.reply input{
-    padding: 10px;
-    width: 100%;
-    border: var(--main-border);
-    border-radius: 20px;
-    box-sizing: border-box;
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-sizing: border-box;
 
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* 이모지아이콘, 화살표 버튼 이동 */
 .reply__column:last-child > i,
 .reply__column:last-child button {
-    position: absolute;
-    right: 3px;
-    top: 3.5px;
+  position: absolute;
+  right: 3px;
+  top: 3.5px;
 }
 
-
 .reply__column:last-child > i {
-    font-size: 25px;
-    right: 50px;
-    top: 9.5px;
+  font-size: 25px;
+  right: 50px;
+  top: 9.5px;
 }
 
 /* 화살표 버튼 꾸미기 */
 .reply__column button {
-    background-color: var(--yew);
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  background-color: var(--yew);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
-
 
 .reply__column button:focus,
 .reply__column button:active {
-    outline: none;
+  outline: none;
 }
 
 /*.reply .reply__column:first-child i {
@@ -216,34 +209,33 @@
 /* +,스마일,화살표 버튼 사라지는 애니메이션 적용 */
 /* reply input이 transition이 없으면 문제가 생김 */
 .reply .reply__column:first-child,
-.reply .fa-smile-wink, 
+.reply .fa-smile-wink,
 .reply button {
-    transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
-
 
 /* reply내부에 어떤 element가 focus되어 있다면 참이 되어 실행.*/
 /*    버튼 지우기 */
 /* 인풋 선택시 +, 스마일, 버튼 지우기 */
 .reply:focus-within .reply__column:first-child,
-.reply:focus-within .fa-smile-wink, 
+.reply:focus-within .fa-smile-wink,
 .reply:focus-within button {
-    /*display: none;*/
-    opacity: 0;
+  /*display: none;*/
+  opacity: 0;
 }
 
 /* 인풋 선택됐을때 width를 늘려주고 인풋창만 다시 올라오게 적용 */
 /* reply input에 트랜지션 적용 해야 동작 */
 .reply input:focus {
-    width: 97vw; /* 인풋창 가로길이 뷰 늘리기 */
-    transform: translateX(-13%) translateY(-80px);
+  width: 97vw; /* 인풋창 가로길이 뷰 늘리기 */
+  transform: translateX(-13%) translateY(-80px);
 }
 
 /* 인풋 선택시 인풋 전체창 내리기 애니메이션 */
 /* reply(인풋전체창)안에 있는 무언가가 focus 되면 실행 */
 /* reply container 에다가 transition 지정 해야함 */
 .reply:focus-within {
-    transform: translateY(80px);
+  transform: translateY(80px);
 }
 
 /*
