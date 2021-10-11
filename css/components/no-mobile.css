@@ -1,21 +1,20 @@
-
 /* 화면커졌을때 경고창 */
 #no-mobile {
-    position: absolute; /* 맨위로 올리기 */
-    z-index: 99; /*z인덱스를 가장높게해서  splasn나 Friends스크린이 올라오지 않게 설정 */
-    height: 100vh; /* 화면의 높이 만큼 */
-    width: 100vw; /* 화면의 너비 만큼 */
-    background-color: var(--yew);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top:0;
-    font-size: 32px;
+  position: absolute; /* 맨위로 올리기 */
+  z-index: 99; /*z인덱스를 가장높게해서  splasn나 Friends스크린이 올라오지 않게 설정 */
+  height: 100vh; /* 화면의 높이 만큼 */
+  width: 100vw; /* 화면의 너비 만큼 */
+  background-color: var(--yew);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  font-size: 32px;
 }
 
 /* 화면 크기가 645px보다 작으면 경고창 없애기 */
-@media screen and (max-width:680px) {
-    #no-mobile {
-        display: none;
-    }
+@media screen and (max-width: 10000px) {
+  #no-mobile {
+    display: none;
+  }
 }

@@ -1,41 +1,40 @@
 /* 클래스 전부 속성 설정 아이콘 및 글자 */
 .icon-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* 클래스 안에있는 icon들 전부 속성 설정 */
 .icon-row__icon {
-    display: flex;  /*수평*/
-    flex-direction: column; /* 수직 */
-    align-items: center; /* 가운데 정렬 */
+  display: flex; /*수평*/
+  flex-direction: column; /* 수직 */
+  align-items: center; /* 가운데 정렬 */
 }
 
 /* icon-row__icon 클래스 안에있는 아이콘(i) 크기조정 */
 .icon-row__icon i {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 /* icon-row__icon 클래스 안에있는 span만 속성 적용 */
 .icon-row__icon span {
-    margin-top: 18px;
+  margin-top: 18px;
 }
-
 
 /* 아이콘 커졌다 돌아오는 애니매이션 */
 @keyframes inconAnimation {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100%{
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 /* 아이콘들 커서놨을때 애니메이션 적용 */
 .icon-row__icon:hover {
-    animation: inconAnimation 0.4s linear;
+  animation: inconAnimation 0.4s linear;
 }
